@@ -24,9 +24,14 @@ exposedbydefault = false
 
 [acme]
 email = "kevinwmiller@protonmail.com"
-storage = "./acme.json"
+storage = "/acme.json"
 entryPoint = "https"
 onHostRule = true
 [acme.httpChallenge]
-entryPoint="http"
+entryPoint = "http"
+#[acme.dnsChallenge]
+#provider = "namecheap"
+#[[acme.domains]]
+#main = "*.kevily.net"
+#sans = ["dashboard.kevily.net", "cloud.kevily.net"]
 
