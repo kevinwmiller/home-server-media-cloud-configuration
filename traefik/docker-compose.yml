@@ -17,8 +17,6 @@ services:
       - traefik.port=8080
     networks:
       - proxy
-    environment:
-      - DUCKDNS_TOKEN=4b0b6c28-68a8-4873-9116-db0ef19fa158
     container_name: traefik
      
 networks:
