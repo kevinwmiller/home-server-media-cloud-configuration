@@ -1,0 +1,26 @@
+version: '2'
+
+services:
+  traefik:
+    image: traefik
+    command: --configFile=./traefik.toml
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - $PWD/traefik.toml:./traefik.toml
+      - $PWD/acme.json:./acme.json
+    ports:
+      - 80:80
+      - 443:443
+    labels:
+      - traefik.enable=true
+      - traefik.frontend.rule=Host:dashboard.kevily.net
+      - traefik.port=8080
+    networks:
+      - proxy
+    environment:
+      - DUCKDNS_TOKEN=4b0b6c28-68a8-4873-9116-db0ef19fa158
+    container_name: traefik
+     
+networks:
+  proxy:
+    external: true

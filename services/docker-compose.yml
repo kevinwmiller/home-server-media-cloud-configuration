@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  nextcloud-db:
+    image: postgres:alpine
+    restart: always
+    volumes:
+      - db:/mnt/md1/nextcloud/postgres:/var/lib/postgresql/data
+    env_file:
+      - nextcloud/postgres/db.env
+  nextcloud:
+    image: nextcloud:fpm-alpine
+    restart: always
+    volumes:
+      - nextcloud:/mnt/md1/nextcloud/data:/var/www/html
+    environment:
+      - POSTGRES_HOST=nextcloud-db
+    env_file:
+      - nextcloud/postgres/db.env
+    depends_on:
+      - nextcloud-db
+  proxy:
+    build: ./traefik
+    restart: always
+    ports:
+      - 80:80
+      - 443:443
+volumes:
+  db:
+  nextcloud:
+        

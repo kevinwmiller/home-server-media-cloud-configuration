@@ -1,0 +1,32 @@
+debug = true
+
+defaultEntryPoints = ["https", "http"]
+
+[web]
+address = ":8080"
+[web.auth.basic]
+users = ["admin:$apr1$Efs10h6K$wfjQpZC0V8eovcJO8XoPa."]
+[entryPoints]
+[entryPoints.http]
+address = ":80"
+[entryPoints.http.redirect]
+entryPoint = "https"
+[entryPoints.https]
+address = ":443"
+[entryPoints.https.tls]
+
+[docker]
+endpoint = "unix:///var/run/docker.sock"
+domain = "kevily.net"
+watch = true
+exposedbydefault = false
+
+
+[acme]
+email = "kevinwmiller@protonmail.com"
+storage = "./acme.json"
+entryPoint = "https"
+onHostRule = true
+[acme.httpChallenge]
+entryPoint="http"
+
