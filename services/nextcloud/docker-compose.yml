@@ -1,36 +1,35 @@
-version: '3'
+version: '2'
 
 services:
   nextcloud-db:
     image: postgres:alpine
     restart: always
-    volumes:
-      - /mnt/md1/services/nextcloud/postgres:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=whatever
     env_file:
-      - nextcloud/db.env
+      - db.env
     networks:
       - cloud
   nextcloud:
-    image: nextcloud:fpm-alpine
+    image: nextcloud
     restart: always
     volumes:
       - /mnt/md1/services/nextcloud/data:/var/www/html
     environment:
       - POSTGRES_HOST=nextcloud-db
+      - POSTGRES_DB=nextcloud
     env_file:
-      - nextcloud/db.env
+      - db.env
     depends_on:
       - nextcloud-db
     networks:
       - proxy
       - cloud
-    ports:
-      - 3000:80
     labels:
       - traefik.enable=true
       - traefik.frontend.rule=Host:cloud.kevily.net
-      - traefik.port=3000
-        
+      - traefik.port=80
+      - traefik.protocol=http     
 networks:
   proxy:
     external: true

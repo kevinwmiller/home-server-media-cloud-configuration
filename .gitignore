@@ -1,1 +1,3 @@
 traefik/acme.json
+services/nextcloud/data
+services/nextcloud/db.env
