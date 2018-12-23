@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  emby:
+    image: emby/embyserver
+    restart: always
+    labels:
+      - traefik.enable=true
+      - traefik.frontend.rule=Host:emby.kevily.net
+      - traefik.port=8096
+      - traefik.protocol=http
+    networks:
+      - proxy        
+networks:
+  proxy:
+    external: true
