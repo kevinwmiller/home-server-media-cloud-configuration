@@ -1,3 +1,5 @@
 traefik/acme.json
 services/nextcloud/data
 services/nextcloud/db.env
+services/emby/libraries
+docker/

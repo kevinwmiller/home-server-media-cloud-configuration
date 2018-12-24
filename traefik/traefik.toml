@@ -5,7 +5,8 @@ defaultEntryPoints = ["https", "http"]
 [web]
 address = ":8080"
 [web.auth.basic]
-users = ["admin:$apr1$Efs10h6K$wfjQpZC0V8eovcJO8XoPa."]
+users = ["admin:$apr1$KvRvraXJ$h.mAo8dQSFh/ViI.hmsh9/"]
+
 [entryPoints]
 [entryPoints.http]
 address = ":80"

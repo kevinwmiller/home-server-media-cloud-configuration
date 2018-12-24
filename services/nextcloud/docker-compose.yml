@@ -9,7 +9,7 @@ services:
     env_file:
       - db.env
     networks:
-      - cloud
+      - nextcloud
   nextcloud:
     image: nextcloud
     restart: always
@@ -22,15 +22,18 @@ services:
       - db.env
     depends_on:
       - nextcloud-db
+    ports:
+      - 3000:80
     networks:
       - proxy
-      - cloud
+      - nextcloud
     labels:
       - traefik.enable=true
       - traefik.frontend.rule=Host:cloud.kevily.net
       - traefik.port=80
-      - traefik.protocol=http     
+      - traefik.protocol=http
+      - traefik.docker.network=proxy
 networks:
   proxy:
     external: true
-  cloud:
+  nextcloud:
