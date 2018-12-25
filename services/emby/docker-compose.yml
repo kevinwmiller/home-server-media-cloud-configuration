@@ -6,10 +6,10 @@ services:
     restart: always
     volumes:
       - emby-data:/var/lib/emby
-      - /mnt/md1/services/emby/libraries/movies:/media/Movies:ro
-      - /mnt/md1/services/emby/libraries/music:/media/Music:ro
-      - /mnt/md1/services/emby/libraries/photos:/media/Photos:ro
-      - /mnt/md1/services/emby/libraries/tv:/media/TV:ro
+      - /mnt/md1/server/services/emby/libraries/movies:/media/Movies:ro
+      - /mnt/md1/server/services/emby/libraries/music:/media/Music:ro
+      - /mnt/md1/server/services/emby/libraries/photos:/media/Photos:ro
+      - /mnt/md1/server/services/emby/libraries/tv:/media/TV:ro
     labels:
       - traefik.enable=true
       - traefik.frontend.rule=Host:emby.kevily.net
