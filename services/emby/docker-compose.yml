@@ -1,7 +1,39 @@
 version: '3.2'
-
 services:
+  transmission:
+    container_name: transmission
+    image: haugene/transmission-openvpn
+    restart: unless-stopped
+    depends_on:
+      - emby
+    environment:
+      - TZ=America/New_York
+      - TR_IDLE_SEEDING_LIMIT_ENABLED=true
+      - TR_IDLE_SEEDING_LIMIT=600
+      - TR_RATIO_LIMIT_ENABLED=true
+      - TR_RATIO_LIMIT=4
+      - TR_DOWNLOAD_DIR=/downloads
+      - TR_INCOMPLETE_DIR_ENABLED=false
+      - TR_RENAME_PARTIAL_FILES=true
+      - TR_DHT_ENABLED=false
+      - TR_PEX_ENABLED=false
+      - USERID=1000
+      - GROUPID=1000
+      - OPENVPN_OPTS=--inactive 3600 --ping 10 --ping-exit 60
+      - OPENVPN_PROVIDER=CUSTOM
+      - OPENVPN_USERNAME=a
+      - OPENVPN_PASSWORD=a
+    ports:
+      - 9091:9091
+    volumes:
+      - $PWD/config/transmission:/var/lib/transmission-daemon/info
+      #set transmission or sonarr download folder to /downloads
+      - $PWD/downloads/complete:/downloads
+      - $PWD/downloads/temp:/var/lib/transmission-daemon/incomplete
+      - $PWD/config.ovpn:/etc/openvpn/custom/default.ovpn
+
   emby:
+    container_name: emby
     image: emby/embyserver
     restart: always
     volumes:
@@ -17,11 +49,62 @@ services:
       - traefik.protocol=http
       - traefik.frontend.headers.referrerPolicy=no-referrer
       - traefik.frontend.headers.customFrameOptionsValue=DENY
-      - "traefik.frontend.headers.contentSecurityPolicy=default-src 'none'; child-src 'self'; font-src 'self' 'data:'; connect-src 'self' 'wss:' 'ws: https://mb3admin.com https://github.com/MediaBrowser/'; media-src 'self' 'blob:' 'data:' https://github.com/MediaBrowser/; manifest-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'self'; object-src 'none'; worker-src 'self' 'blob:'; script-src 'self' https://www.gstatic.com; img-src 'data:' 'https:' 'http:' ; style-src 'unsafe-inline' 'self' https://fonts.googleapis.com/css"
+      - "traefik.frontend.headers.contentSecurityPolicy=default-src 'none'; child-src 'self'; font-src 'self' data: ; connect-src 'self' wss: ws: https://mb3admin.com https://github.com/MediaBrowser/; media-src 'self' blob: data: https://github.com/MediaBrowser/; manifest-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'self'; object-src 'none'; worker-src 'self' blob: ; script-src 'unsafe-inline' 'self' https://www.gstatic.com; img-src data: https: http: ; style-src 'unsafe-inline' 'self' https://fonts.googleapis.com/css"
       - traefik.frontend.headers.STSSeconds=315360000
       - traefik.frontend.headers.contentTypeNosniff=true
     networks:
-      - proxy        
+      - proxy
+
+  sonarr:
+    container_name: sonarr
+    image: linuxserver/sonarr
+    restart: unless-stopped
+    depends_on:
+      - transmission
+      - emby
+    environment:
+      - TZ=America/New_York
+      - PUID=1000
+      - PGID=1000
+    ports:
+      - 8989:8989
+    volumes:
+      - $PWD/config/sonarr:/config
+      - $PWD/libraries/tv:/tv
+      - $PWD/downloads/complete:/downloads
+
+  radarr:
+    container_name: radarr
+    image: linuxserver/radarr
+    restart: unless-stopped
+    depends_on:
+      - transmission
+      - emby
+    ports:
+      - 7878:7878
+    environment:
+      - TZ=America/New_York
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - $PWD/config/radarr:/config
+      - $PWD/libraries/movies:/movies
+      - $PWD/downloads/complete:/downloads
+
+  jackett:
+    container_name: jackett
+    image: linuxserver/jackett
+    restart: unless-stopped
+    ports:
+      - 9117:9117
+    environment:
+      - TZ=America/New_York
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - $PWD/config/jackett:/config
+      - $PWD/downloads/blackhole:/downloads
+
 networks:
   proxy:
     external: true

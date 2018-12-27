@@ -3,3 +3,4 @@ services/nextcloud/data
 services/nextcloud/db.env
 services/emby/libraries
 docker/
+services/emby/config.ovpn
