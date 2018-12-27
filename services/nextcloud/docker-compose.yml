@@ -14,7 +14,7 @@ services:
     image: nextcloud
     restart: always
     volumes:
-      - /mnt/md1/server/services/nextcloud/data:/var/www/html
+      - $PWD/data:/var/www/html
     environment:
       - POSTGRES_HOST=nextcloud-db
       - POSTGRES_DB=nextcloud
