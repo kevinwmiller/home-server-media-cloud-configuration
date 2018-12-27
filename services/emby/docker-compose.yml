@@ -4,6 +4,7 @@ services:
     container_name: transmission
     image: haugene/transmission-openvpn
     restart: unless-stopped
+    privileged: true
     depends_on:
       - emby
     environment:
@@ -17,8 +18,7 @@ services:
       - TR_RENAME_PARTIAL_FILES=true
       - TR_DHT_ENABLED=false
       - TR_PEX_ENABLED=false
-      - USERID=1000
-      - GROUPID=1000
+      - LOCAL_NETWORK=10.0.0.0/24
       - OPENVPN_OPTS=--inactive 3600 --ping 10 --ping-exit 60
       - OPENVPN_PROVIDER=CUSTOM
       - OPENVPN_USERNAME=a
@@ -30,7 +30,8 @@ services:
       #set transmission or sonarr download folder to /downloads
       - $PWD/downloads/complete:/downloads
       - $PWD/downloads/temp:/var/lib/transmission-daemon/incomplete
-      - $PWD/config.ovpn:/etc/openvpn/custom/default.ovpn
+      - $PWD/.vpn/config.ovpn:/etc/openvpn/custom/default.ovpn
+      - $PWD/.vpn/auth.txt:/etc/openvpn/custom/auth.txt
 
   emby:
     container_name: emby

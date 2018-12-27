@@ -609,3 +609,370 @@
 18-12-26 23:31:44.5|Info|OwinHostController|Listening on the following URLs:
 18-12-26 23:31:44.5|Info|OwinHostController|  http://*:8989/
 18-12-26 23:31:44.6|Info|NancyBootstrapper|Starting Web Server
+18-12-26 23:35:46.7|Info|RssSyncService|Starting RSS Sync
+18-12-26 23:35:46.7|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-26 23:35:46.7|Info|DownloadDecisionMaker|No results found
+18-12-26 23:35:46.7|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-26 23:37:39.8|Warn|NzbDroneErrorPipeline|Invalid request Validation failed: 
+ -- Invalid Path
+18-12-26 23:38:08.3|Warn|NzbDroneErrorPipeline|Invalid request Validation failed: 
+ -- Invalid Path
+18-12-26 23:38:40.0|Info|AddSeriesService|Adding Series [73871][Futurama] Path: [/tv/Futurama]
+18-12-26 23:38:40.1|Info|RefreshSeriesService|Updating Info for Futurama
+18-12-26 23:38:40.3|Info|RefreshEpisodeService|Starting episode info refresh for: [73871][Futurama]
+18-12-26 23:38:40.4|Info|RefreshEpisodeService|Finished episode refresh for series: [73871][Futurama].
+18-12-26 23:38:40.4|Warn|DiskScanService|Series' root folder (/tv) is empty.
+18-12-26 23:38:40.4|Info|SeriesScannedHandler|[Futurama] was recently added, performing post-add actions
+18-12-26 23:38:40.6|Warn|MediaCoverMapper|File /config/MediaCover/1/poster.jpg not found
+18-12-26 23:38:40.8|Info|EpisodeSearchService|Performing missing search for 124 episodes
+18-12-26 23:38:40.9|Info|NzbSearchService|Searching 0 indexers for [Futurama : S01]
+18-12-26 23:38:40.9|Info|DownloadDecisionMaker|No results found
+18-12-26 23:38:40.9|Info|NzbSearchService|Searching 0 indexers for [Futurama : S02]
+18-12-26 23:38:40.9|Info|DownloadDecisionMaker|No results found
+18-12-26 23:38:40.9|Info|NzbSearchService|Searching 0 indexers for [Futurama : S03]
+18-12-26 23:38:40.9|Info|DownloadDecisionMaker|No results found
+18-12-26 23:38:40.9|Info|NzbSearchService|Searching 0 indexers for [Futurama : S04]
+18-12-26 23:38:40.9|Info|DownloadDecisionMaker|No results found
+18-12-26 23:38:40.9|Info|NzbSearchService|Searching 0 indexers for [Futurama : S05]
+18-12-26 23:38:40.9|Info|DownloadDecisionMaker|No results found
+18-12-26 23:38:40.9|Info|NzbSearchService|Searching 0 indexers for [Futurama : S06]
+18-12-26 23:38:40.9|Info|DownloadDecisionMaker|No results found
+18-12-26 23:38:40.9|Info|NzbSearchService|Searching 0 indexers for [Futurama : S07]
+18-12-26 23:38:40.9|Info|DownloadDecisionMaker|No results found
+18-12-26 23:38:40.9|Info|EpisodeSearchService|Completed missing search for 124 episodes. 0 reports downloaded.
+18-12-26 23:38:41.2|Info|MediaCoverService|Downloading Fanart for [73871][Futurama] https://www.thetvdb.com/banners/fanart/original/73871-35.jpg
+18-12-26 23:38:41.9|Info|MediaCoverService|Downloading Banner for [73871][Futurama] https://www.thetvdb.com/banners/graphical/73871-g15.jpg
+18-12-26 23:38:42.0|Info|MediaCoverService|Downloading Poster for [73871][Futurama] https://www.thetvdb.com/banners/posters/73871-16.jpg
+18-12-26 23:38:42.1|Info|MetadataService|Series folder does not exist, skipping metadata creation
+18-12-26 23:38:53.8|Info|RefreshSeriesService|Updating Info for Futurama
+18-12-26 23:38:54.0|Info|RefreshEpisodeService|Starting episode info refresh for: [73871][Futurama]
+18-12-26 23:38:54.1|Info|RefreshEpisodeService|Finished episode refresh for series: [73871][Futurama].
+18-12-26 23:38:54.1|Warn|DiskScanService|Series' root folder (/tv) is empty.
+18-12-26 23:38:54.8|Info|MetadataService|Series folder does not exist, skipping metadata creation
+18-12-26 23:39:10.2|Info|RefreshSeriesService|Updating Info for Futurama
+18-12-26 23:39:10.3|Info|RefreshEpisodeService|Starting episode info refresh for: [73871][Futurama]
+18-12-26 23:39:10.5|Info|RefreshEpisodeService|Finished episode refresh for series: [73871][Futurama].
+18-12-26 23:39:10.5|Warn|DiskScanService|Series' root folder (/tv) is empty.
+18-12-26 23:39:11.2|Info|MetadataService|Series folder does not exist, skipping metadata creation
+18-12-26 23:50:49.6|Info|RssSyncService|Starting RSS Sync
+18-12-26 23:50:49.6|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-26 23:50:49.6|Info|DownloadDecisionMaker|No results found
+18-12-26 23:50:49.6|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 00:05:51.5|Info|RssSyncService|Starting RSS Sync
+18-12-27 00:05:51.5|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 00:05:51.5|Info|DownloadDecisionMaker|No results found
+18-12-27 00:05:51.5|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 00:18:26.0|Error|Transmission|Unable to connect to Transmission, please check your settings
+
+[v2.0.0.5252] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings ---> System.Net.WebException: The operation has timed out.: 'http://10.0.0.225:9091/transmission/rpc' ---> System.Net.WebException: The operation has timed out.
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000f6] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:64 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0019e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:92 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000b5] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:121 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:57 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient (NzbDrone.Common.Http.HttpRequestBuilder requestBuilder, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings, System.Boolean reauthenticate) [0x0004f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:218 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0001f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:255 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00138] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:307 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetSessionVariables (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:147 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetConfig (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:121 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetClientVersion (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:111 
+  at NzbDrone.Core.Download.Clients.Transmission.Transmission.ValidateVersion () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\Transmission.cs:28 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.TestConnection () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:196 
+
+18-12-27 00:18:26.3|Warn|NzbDroneErrorPipeline|Invalid request Validation failed: 
+ -- Unable to connect
+18-12-27 00:18:27.8|Error|Transmission|Unable to connect to Transmission, please check your settings
+
+[v2.0.0.5252] NzbDrone.Core.Download.Clients.DownloadClientUnavailableException: Unable to connect to Transmission, please check your settings ---> System.Net.WebException: The operation has timed out.: 'http://10.0.0.225:9091/transmission/rpc' ---> System.Net.WebException: The operation has timed out.
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000f6] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:64 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0019e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:92 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000b5] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:121 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:57 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.AuthenticateClient (NzbDrone.Common.Http.HttpRequestBuilder requestBuilder, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings, System.Boolean reauthenticate) [0x0004f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:218 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x0001f] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:255 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.ProcessRequest (System.String action, System.Object arguments, NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00138] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:307 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetSessionVariables (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:147 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetConfig (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:121 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionProxy.GetClientVersion (NzbDrone.Core.Download.Clients.Transmission.TransmissionSettings settings) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionProxy.cs:111 
+  at NzbDrone.Core.Download.Clients.Transmission.Transmission.ValidateVersion () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\Transmission.cs:28 
+  at NzbDrone.Core.Download.Clients.Transmission.TransmissionBase.TestConnection () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Download\Clients\Transmission\TransmissionBase.cs:196 
+
+18-12-27 00:18:27.8|Warn|NzbDroneErrorPipeline|Invalid request Validation failed: 
+ -- Unable to connect
+18-12-27 00:20:53.8|Info|RssSyncService|Starting RSS Sync
+18-12-27 00:20:53.8|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 00:20:53.8|Info|DownloadDecisionMaker|No results found
+18-12-27 00:20:53.8|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 00:22:57.2|Error|MediaBrowserService|Unable to send test message
+
+[v2.0.0.5252] System.Net.WebException: Error: ConnectFailure (Connection refused): 'http://emby.kevily.net:8096/mediabrowser/Notifications/Admin' ---> System.Net.WebException: Error: ConnectFailure (Connection refused) ---> System.Net.Sockets.SocketException: Connection refused
+  at System.Net.Sockets.SocketAsyncResult.CheckIfThrowDelayedException () [0x00014] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at System.Net.Sockets.Socket.EndConnect (System.IAsyncResult asyncResult) [0x0002c] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at System.Net.Sockets.SocketTaskExtensions+<>c.<ConnectAsync>b__2_1 (System.IAsyncResult asyncResult) [0x00006] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at System.Threading.Tasks.TaskFactory`1[TResult].FromAsyncCoreLogic (System.IAsyncResult iar, System.Func`2[T,TResult] endFunction, System.Action`1[T] endAction, System.Threading.Tasks.Task`1[TResult] promise, System.Boolean requiresSynchronization) [0x00019] in <0f8aeac9d63d4b8aa575761bb4e65b79>:0 
+--- End of stack trace from previous location where exception was thrown ---
+
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x0019b] in <c0e40d34c25e4827874530676d4126b9>:0 
+   --- End of inner exception stack trace ---
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x00217] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at System.Net.WebConnection.InitConnection (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x000cc] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at System.Net.WebOperation.Run () [0x0009a] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at System.Net.WebCompletionSource`1[T].WaitForCompletion () [0x00094] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at System.Net.HttpWebRequest.GetRequestStream () [0x00016] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000ca] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:58 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0019e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:92 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000b5] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:121 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:57 
+  at NzbDrone.Common.Http.HttpClient.Post (NzbDrone.Common.Http.HttpRequest request) [0x00007] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:282 
+  at NzbDrone.Core.Notifications.Emby.MediaBrowserProxy.ProcessRequest (NzbDrone.Common.Http.HttpRequest request, NzbDrone.Core.Notifications.Emby.MediaBrowserSettings settings) [0x00016] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Notifications\MediaBrowser\MediaBrowserProxy.cs:47 
+  at NzbDrone.Core.Notifications.Emby.MediaBrowserProxy.Notify (NzbDrone.Core.Notifications.Emby.MediaBrowserSettings settings, System.String title, System.String message) [0x00036] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Notifications\MediaBrowser\MediaBrowserProxy.cs:31 
+  at NzbDrone.Core.Notifications.Emby.MediaBrowserService.Notify (NzbDrone.Core.Notifications.Emby.MediaBrowserSettings settings, System.String title, System.String message) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Notifications\MediaBrowser\MediaBrowserService.cs:30 
+  at NzbDrone.Core.Notifications.Emby.MediaBrowserService.Test (NzbDrone.Core.Notifications.Emby.MediaBrowserSettings settings) [0x00016] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Notifications\MediaBrowser\MediaBrowserService.cs:44 
+
+18-12-27 00:22:57.4|Warn|NzbDroneErrorPipeline|Invalid request Validation failed: 
+ -- Unable to send test message: Error: ConnectFailure (Connection refused): 'http://emby.kevily.net:8096/mediabrowser/Notifications/Admin'
+18-12-27 00:23:13.0|Warn|NzbDroneErrorPipeline|Invalid request Validation failed: 
+ -- must be valid Host without http://
+18-12-27 00:23:20.8|Error|MediaBrowserService|Unable to send test message
+
+[v2.0.0.5252] System.Net.WebException: Error: ConnectFailure (Connection refused): 'http://emby.kevily.net:8096/mediabrowser/Notifications/Admin' ---> System.Net.WebException: Error: ConnectFailure (Connection refused) ---> System.Net.Sockets.SocketException: Connection refused
+  at System.Net.Sockets.SocketAsyncResult.CheckIfThrowDelayedException () [0x00014] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at System.Net.Sockets.Socket.EndConnect (System.IAsyncResult asyncResult) [0x0002c] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at System.Net.Sockets.SocketTaskExtensions+<>c.<ConnectAsync>b__2_1 (System.IAsyncResult asyncResult) [0x00006] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at System.Threading.Tasks.TaskFactory`1[TResult].FromAsyncCoreLogic (System.IAsyncResult iar, System.Func`2[T,TResult] endFunction, System.Action`1[T] endAction, System.Threading.Tasks.Task`1[TResult] promise, System.Boolean requiresSynchronization) [0x00019] in <0f8aeac9d63d4b8aa575761bb4e65b79>:0 
+--- End of stack trace from previous location where exception was thrown ---
+
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x0019b] in <c0e40d34c25e4827874530676d4126b9>:0 
+   --- End of inner exception stack trace ---
+  at System.Net.WebConnection.Connect (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x00217] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at System.Net.WebConnection.InitConnection (System.Net.WebOperation operation, System.Threading.CancellationToken cancellationToken) [0x000cc] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at System.Net.WebOperation.Run () [0x0009a] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at System.Net.WebCompletionSource`1[T].WaitForCompletion () [0x00094] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at System.Net.HttpWebRequest.GetRequestStream () [0x00016] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000ca] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:58 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0019e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:92 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000b5] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:121 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:57 
+  at NzbDrone.Common.Http.HttpClient.Post (NzbDrone.Common.Http.HttpRequest request) [0x00007] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:282 
+  at NzbDrone.Core.Notifications.Emby.MediaBrowserProxy.ProcessRequest (NzbDrone.Common.Http.HttpRequest request, NzbDrone.Core.Notifications.Emby.MediaBrowserSettings settings) [0x00016] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Notifications\MediaBrowser\MediaBrowserProxy.cs:47 
+  at NzbDrone.Core.Notifications.Emby.MediaBrowserProxy.Notify (NzbDrone.Core.Notifications.Emby.MediaBrowserSettings settings, System.String title, System.String message) [0x00036] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Notifications\MediaBrowser\MediaBrowserProxy.cs:31 
+  at NzbDrone.Core.Notifications.Emby.MediaBrowserService.Notify (NzbDrone.Core.Notifications.Emby.MediaBrowserSettings settings, System.String title, System.String message) [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Notifications\MediaBrowser\MediaBrowserService.cs:30 
+  at NzbDrone.Core.Notifications.Emby.MediaBrowserService.Test (NzbDrone.Core.Notifications.Emby.MediaBrowserSettings settings) [0x00016] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Notifications\MediaBrowser\MediaBrowserService.cs:44 
+
+18-12-27 00:23:20.8|Warn|NzbDroneErrorPipeline|Invalid request Validation failed: 
+ -- Unable to send test message: Error: ConnectFailure (Connection refused): 'http://emby.kevily.net:8096/mediabrowser/Notifications/Admin'
+18-12-27 00:35:56.7|Info|RssSyncService|Starting RSS Sync
+18-12-27 00:35:56.7|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 00:35:56.7|Info|DownloadDecisionMaker|No results found
+18-12-27 00:35:56.7|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 00:50:59.2|Info|RssSyncService|Starting RSS Sync
+18-12-27 00:50:59.2|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 00:50:59.2|Info|DownloadDecisionMaker|No results found
+18-12-27 00:50:59.2|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 01:06:01.5|Info|RssSyncService|Starting RSS Sync
+18-12-27 01:06:01.5|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 01:06:01.5|Info|DownloadDecisionMaker|No results found
+18-12-27 01:06:01.5|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 01:21:04.5|Info|RssSyncService|Starting RSS Sync
+18-12-27 01:21:04.5|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 01:21:04.5|Info|DownloadDecisionMaker|No results found
+18-12-27 01:21:04.5|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 01:31:36.7|Info|SceneMappingService|Updating Scene mappings
+18-12-27 01:36:07.1|Info|RssSyncService|Starting RSS Sync
+18-12-27 01:36:07.1|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 01:36:07.1|Info|DownloadDecisionMaker|No results found
+18-12-27 01:36:07.1|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 01:51:09.1|Info|RssSyncService|Starting RSS Sync
+18-12-27 01:51:09.1|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 01:51:09.1|Info|DownloadDecisionMaker|No results found
+18-12-27 01:51:09.1|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 02:06:10.3|Info|RssSyncService|Starting RSS Sync
+18-12-27 02:06:10.3|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 02:06:10.3|Info|DownloadDecisionMaker|No results found
+18-12-27 02:06:10.3|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 02:21:12.1|Info|RssSyncService|Starting RSS Sync
+18-12-27 02:21:12.1|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 02:21:12.1|Info|DownloadDecisionMaker|No results found
+18-12-27 02:21:12.1|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 02:36:14.5|Info|RssSyncService|Starting RSS Sync
+18-12-27 02:36:14.5|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 02:36:14.5|Info|DownloadDecisionMaker|No results found
+18-12-27 02:36:14.5|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 02:51:16.8|Info|RssSyncService|Starting RSS Sync
+18-12-27 02:51:16.8|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 02:51:16.8|Info|DownloadDecisionMaker|No results found
+18-12-27 02:51:16.8|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 03:06:18.6|Info|RssSyncService|Starting RSS Sync
+18-12-27 03:06:18.6|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 03:06:18.6|Info|DownloadDecisionMaker|No results found
+18-12-27 03:06:18.6|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 03:21:20.2|Info|RssSyncService|Starting RSS Sync
+18-12-27 03:21:20.2|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 03:21:20.2|Info|DownloadDecisionMaker|No results found
+18-12-27 03:21:20.2|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 03:36:22.5|Info|RssSyncService|Starting RSS Sync
+18-12-27 03:36:22.5|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 03:36:22.5|Info|DownloadDecisionMaker|No results found
+18-12-27 03:36:22.5|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 03:51:24.7|Info|RssSyncService|Starting RSS Sync
+18-12-27 03:51:24.7|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 03:51:24.7|Info|DownloadDecisionMaker|No results found
+18-12-27 03:51:24.7|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 04:06:26.9|Info|RssSyncService|Starting RSS Sync
+18-12-27 04:06:26.9|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 04:06:26.9|Info|DownloadDecisionMaker|No results found
+18-12-27 04:06:26.9|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 04:21:29.0|Info|RssSyncService|Starting RSS Sync
+18-12-27 04:21:29.0|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 04:21:29.0|Info|DownloadDecisionMaker|No results found
+18-12-27 04:21:29.0|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 04:31:59.9|Info|SceneMappingService|Updating Scene mappings
+18-12-27 04:36:30.6|Info|RssSyncService|Starting RSS Sync
+18-12-27 04:36:30.6|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 04:36:30.6|Info|DownloadDecisionMaker|No results found
+18-12-27 04:36:30.6|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 04:51:33.0|Info|RssSyncService|Starting RSS Sync
+18-12-27 04:51:33.0|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 04:51:33.0|Info|DownloadDecisionMaker|No results found
+18-12-27 04:51:33.0|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 05:06:35.1|Info|RssSyncService|Starting RSS Sync
+18-12-27 05:06:35.1|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 05:06:35.1|Info|DownloadDecisionMaker|No results found
+18-12-27 05:06:35.1|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 05:21:37.8|Info|RssSyncService|Starting RSS Sync
+18-12-27 05:21:37.8|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 05:21:37.8|Info|DownloadDecisionMaker|No results found
+18-12-27 05:21:37.8|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 05:36:39.7|Info|RssSyncService|Starting RSS Sync
+18-12-27 05:36:39.7|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 05:36:39.7|Info|DownloadDecisionMaker|No results found
+18-12-27 05:36:39.7|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 05:51:42.0|Info|RssSyncService|Starting RSS Sync
+18-12-27 05:51:42.0|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 05:51:42.0|Info|DownloadDecisionMaker|No results found
+18-12-27 05:51:42.0|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 06:06:44.4|Info|RssSyncService|Starting RSS Sync
+18-12-27 06:06:44.4|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 06:06:44.4|Info|DownloadDecisionMaker|No results found
+18-12-27 06:06:44.4|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 06:21:46.9|Info|RssSyncService|Starting RSS Sync
+18-12-27 06:21:46.9|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 06:21:46.9|Info|DownloadDecisionMaker|No results found
+18-12-27 06:21:46.9|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 06:36:48.6|Info|RssSyncService|Starting RSS Sync
+18-12-27 06:36:48.6|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 06:36:48.6|Info|DownloadDecisionMaker|No results found
+18-12-27 06:36:48.6|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 06:51:49.7|Info|RssSyncService|Starting RSS Sync
+18-12-27 06:51:49.7|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 06:51:49.7|Info|DownloadDecisionMaker|No results found
+18-12-27 06:51:49.7|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 07:03:34.1|Info|NzbSearchService|Searching 0 indexers for [Futurama : S01]
+18-12-27 07:03:34.1|Info|DownloadDecisionMaker|No results found
+18-12-27 07:03:34.1|Info|SeasonSearchService|Season search completed. 0 reports downloaded.
+18-12-27 07:03:44.6|Info|NzbSearchService|Searching 0 indexers for [Futurama : S01]
+18-12-27 07:03:44.6|Info|DownloadDecisionMaker|No results found
+18-12-27 07:03:44.6|Info|SeasonSearchService|Season search completed. 0 reports downloaded.
+18-12-27 07:06:52.2|Info|RssSyncService|Starting RSS Sync
+18-12-27 07:06:52.2|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 07:06:52.2|Info|DownloadDecisionMaker|No results found
+18-12-27 07:06:52.2|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 07:16:05.5|Warn|Torznab|Unable to connect to indexer
+
+[v2.0.0.5252] System.Net.WebException: The operation has timed out.: 'http://10.0.0.225:9117/api/v2.0/indexers/kickasstorrent/results/torznab/api?t=caps&apikey=(removed) ---> System.Net.WebException: The operation has timed out.
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000f6] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:64 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0019e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:92 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000b5] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:121 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:57 
+  at NzbDrone.Common.Http.HttpClient.Get (NzbDrone.Common.Http.HttpRequest request) [0x00007] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:264 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x0009a] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:62 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x0006a] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.get_PageSize () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:22 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.GetRequestGenerator () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:26 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].TestConnection () [0x00007] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:334 
+
+18-12-27 07:16:05.5|Warn|NzbDroneErrorPipeline|Invalid request Validation failed: 
+ -- Unable to connect to indexer, check the log for more details
+18-12-27 07:16:40.2|Warn|Torznab|Unable to connect to indexer
+
+[v2.0.0.5252] System.Net.WebException: The operation has timed out.: 'http://10.0.0.225:9117/api/v2.0/indexers/kickasstorrent/results/torznab/api?t=caps&apikey=(removed) ---> System.Net.WebException: The operation has timed out.
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000f6] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:64 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0019e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:92 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000b5] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:121 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:57 
+  at NzbDrone.Common.Http.HttpClient.Get (NzbDrone.Common.Http.HttpRequest request) [0x00007] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:264 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x0009a] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:62 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x0006a] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.get_PageSize () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:22 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.GetRequestGenerator () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:26 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].TestConnection () [0x00007] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:334 
+
+18-12-27 07:16:40.2|Warn|NzbDroneErrorPipeline|Invalid request Validation failed: 
+ -- Unable to connect to indexer, check the log for more details
+18-12-27 07:18:21.7|Warn|Torznab|Unable to connect to indexer
+
+[v2.0.0.5252] System.Net.WebException: The operation has timed out.: 'http://10.0.0.225:9117/api/v2.0/indexers/kickasstorrent/results/torznab/api?t=caps&apikey=(removed) ---> System.Net.WebException: The operation has timed out.
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000f6] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:64 
+   --- End of inner exception stack trace ---
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0019e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:92 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000b5] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:53 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:121 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:57 
+  at NzbDrone.Common.Http.HttpClient.Get (NzbDrone.Common.Http.HttpRequest request) [0x00007] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Http\HttpClient.cs:264 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x0009a] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:62 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x0006a] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:35 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.get_PageSize () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:22 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.GetRequestGenerator () [0x00000] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:26 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].TestConnection () [0x00007] in C:\BuildAgent\work\5d7581516c0ee5b3\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:334 
+
+18-12-27 07:18:21.7|Warn|NzbDroneErrorPipeline|Invalid request Validation failed: 
+ -- Unable to connect to indexer, check the log for more details
+18-12-27 07:22:02.3|Info|Bootstrap|Starting Sonarr - /opt/NzbDrone/NzbDrone.exe - Version 2.0.0.5252
+18-12-27 07:22:02.7|Info|AppFolderInfo|Data directory is being overridden to [/config]
+18-12-27 07:22:02.8|Info|Router|Application mode: Interactive
+18-12-27 07:22:03.0|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+18-12-27 07:22:03.1|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+18-12-27 07:22:03.2|Info|OwinHostController|Listening on the following URLs:
+18-12-27 07:22:03.2|Info|OwinHostController|  http://*:8989/
+18-12-27 07:22:03.3|Info|NancyBootstrapper|Starting Web Server
+18-12-27 07:22:34.6|Info|RssSyncService|Starting RSS Sync
+18-12-27 07:22:34.6|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 07:22:34.6|Info|DownloadDecisionMaker|No results found
+18-12-27 07:22:34.6|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 07:26:51.5|Info|Bootstrap|Starting Sonarr - /opt/NzbDrone/NzbDrone.exe - Version 2.0.0.5252
+18-12-27 07:26:52.0|Info|AppFolderInfo|Data directory is being overridden to [/config]
+18-12-27 07:26:52.2|Info|Router|Application mode: Interactive
+18-12-27 07:26:52.4|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+18-12-27 07:26:52.6|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+18-12-27 07:26:52.6|Info|OwinHostController|Listening on the following URLs:
+18-12-27 07:26:52.6|Info|OwinHostController|  http://*:8989/
+18-12-27 07:26:52.7|Info|NancyBootstrapper|Starting Web Server

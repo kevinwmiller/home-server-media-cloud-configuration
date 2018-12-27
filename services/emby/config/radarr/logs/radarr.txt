@@ -763,3 +763,291 @@
 18-12-26 23:32:17.3|Info|DownloadDecisionMaker|No results found
 18-12-26 23:32:17.3|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
 18-12-26 23:32:17.6|Info|NetImportSearchService|No lists are enabled for auto-import.
+18-12-27 00:30:13.6|Warn|NzbDroneErrorPipeline|Invalid request Validation failed: 
+ -- must be valid URL that starts with http(s)://
+18-12-27 00:32:00.8|Warn|Torznab|Unable to connect to indexer
+
+[v0.2.0.1217] System.Net.WebException: The operation has timed out.
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0012b] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:74 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000cc] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:58 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:114 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:50 
+  at NzbDrone.Common.Http.HttpClient.Get (NzbDrone.Common.Http.HttpRequest request) [0x00007] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:250 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00084] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:63 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:36 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x0006a] in C:\projects\radarr-usby1\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:36 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.get_PageSize () [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:24 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.GetRequestGenerator () [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:28 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].GetRequestChain (NzbDrone.Core.IndexerSearch.Definitions.SearchCriteriaBase searchCriteria) [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:64 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].TestConnection () [0x00019] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:297 
+
+18-12-27 00:32:23.7|Info|PreDBService|Starting PreDB Sync
+18-12-27 00:32:23.9|Info|NetImportSearchService|No lists are enabled for auto-import.
+18-12-27 00:32:24.1|Info|RssSyncService|Starting RSS Sync
+18-12-27 00:32:24.1|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 00:32:24.1|Info|DownloadDecisionMaker|No results found
+18-12-27 00:32:24.1|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 00:33:00.1|Warn|NzbDroneErrorPipeline|Invalid request Validation failed: 
+ -- 'Base Url' should not be empty.
+18-12-27 00:33:40.9|Warn|Torznab|Unable to connect to indexer: The operation has timed out.
+
+[v0.2.0.1217] System.Net.WebException: The operation has timed out.
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0012b] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:74 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000cc] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:58 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:114 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:50 
+  at NzbDrone.Common.Http.HttpClient.Get (NzbDrone.Common.Http.HttpRequest request) [0x00007] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:250 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00084] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:63 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:36 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x0006a] in C:\projects\radarr-usby1\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:36 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.TestCapabilities () [0x00006] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:103 
+
+18-12-27 00:33:40.9|Warn|NzbDroneErrorPipeline|Invalid request Validation failed: 
+ -- Unable to connect to indexer, check the log for more details
+ -- Unable to connect to indexer, check the log for more details
+18-12-27 00:35:32.5|Warn|Torznab|Unable to connect to indexer
+
+[v0.2.0.1217] System.Net.WebException: The operation has timed out.
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0012b] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:74 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000cc] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:58 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:114 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:50 
+  at NzbDrone.Common.Http.HttpClient.Get (NzbDrone.Common.Http.HttpRequest request) [0x00007] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:250 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00084] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:63 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:36 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x0006a] in C:\projects\radarr-usby1\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:36 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.get_PageSize () [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:24 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.GetRequestGenerator () [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:28 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].GetRequestChain (NzbDrone.Core.IndexerSearch.Definitions.SearchCriteriaBase searchCriteria) [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:64 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].TestConnection () [0x00019] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:297 
+
+18-12-27 00:37:04.7|Warn|HttpClient|HTTP Error - Res: [GET] https://10.0.0.225:443/torznab/all/api?t=caps&apikey=(removed) 404.NotFound
+404 page not found
+
+18-12-27 00:37:04.7|Warn|Torznab|Unable to connect to indexer
+
+[v0.2.0.1217] NzbDrone.Common.Http.HttpException: HTTP request failed: [404:NotFound] [GET] at [https://10.0.0.225:443/torznab/all/api?t=caps&apikey=(removed)  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00131] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:93 
+  at NzbDrone.Common.Http.HttpClient.Get (NzbDrone.Common.Http.HttpRequest request) [0x00007] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:250 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00084] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:63 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:36 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x0006a] in C:\projects\radarr-usby1\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:36 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.get_PageSize () [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:24 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.GetRequestGenerator () [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:28 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].GetRequestChain (NzbDrone.Core.IndexerSearch.Definitions.SearchCriteriaBase searchCriteria) [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:64 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].TestConnection () [0x00019] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:297 
+404 page not found
+
+
+18-12-27 00:37:04.7|Warn|HttpClient|HTTP Error - Res: [GET] https://10.0.0.225:443/torznab/all/api?t=caps&apikey=(removed) 404.NotFound
+404 page not found
+
+18-12-27 00:37:04.7|Warn|Torznab|Unable to connect to indexer: HTTP request failed: [404:NotFound] [GET] at [https://10.0.0.225:443/torznab/all/api?t=caps&apikey=(removed) NzbDrone.Common.Http.HttpException: HTTP request failed: [404:NotFound] [GET] at [https://10.0.0.225:443/torznab/all/api?t=caps&apikey=(removed)  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00131] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:93 
+  at NzbDrone.Common.Http.HttpClient.Get (NzbDrone.Common.Http.HttpRequest request) [0x00007] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:250 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00084] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:63 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:36 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x0006a] in C:\projects\radarr-usby1\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:36 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.TestCapabilities () [0x00006] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:103 
+404 page not found
+
+
+18-12-27 00:37:04.7|Warn|NzbDroneErrorPipeline|Invalid request Validation failed: 
+ -- Unable to connect to indexer, check the log for more details
+ -- Unable to connect to indexer, check the log for more details
+18-12-27 00:37:12.6|Warn|Torznab|Unable to connect to indexer: The operation has timed out.
+
+[v0.2.0.1217] System.Net.WebException: The operation has timed out.
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0012b] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:74 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000cc] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:58 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:114 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:50 
+  at NzbDrone.Common.Http.HttpClient.Get (NzbDrone.Common.Http.HttpRequest request) [0x00007] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:250 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00084] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:63 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:36 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x0006a] in C:\projects\radarr-usby1\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:36 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.TestCapabilities () [0x00006] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:103 
+
+18-12-27 00:37:12.6|Warn|NzbDroneErrorPipeline|Invalid request Validation failed: 
+ -- Unable to connect to indexer, check the log for more details
+ -- Unable to connect to indexer, check the log for more details
+18-12-27 00:37:58.8|Warn|Torznab|Unable to connect to indexer
+
+[v0.2.0.1217] System.Net.WebException: The operation has timed out.
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0012b] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:74 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000cc] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:58 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:114 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:50 
+  at NzbDrone.Common.Http.HttpClient.Get (NzbDrone.Common.Http.HttpRequest request) [0x00007] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:250 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00084] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:63 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:36 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x0006a] in C:\projects\radarr-usby1\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:36 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.get_PageSize () [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:24 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.GetRequestGenerator () [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:28 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].GetRequestChain (NzbDrone.Core.IndexerSearch.Definitions.SearchCriteriaBase searchCriteria) [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:64 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].TestConnection () [0x00019] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:297 
+
+18-12-27 00:38:58.1|Warn|Torznab|Unable to connect to indexer
+
+[v0.2.0.1217] System.Net.WebException: The operation has timed out.
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0012b] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:74 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000cc] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:58 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:114 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:50 
+  at NzbDrone.Common.Http.HttpClient.Get (NzbDrone.Common.Http.HttpRequest request) [0x00007] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:250 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00084] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:63 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:36 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x0006a] in C:\projects\radarr-usby1\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:36 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.get_PageSize () [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:24 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.GetRequestGenerator () [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:28 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].GetRequestChain (NzbDrone.Core.IndexerSearch.Definitions.SearchCriteriaBase searchCriteria) [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:64 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].TestConnection () [0x00019] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:297 
+
+18-12-27 00:39:38.8|Warn|Torznab|Unable to connect to indexer: The operation has timed out.
+
+[v0.2.0.1217] System.Net.WebException: The operation has timed out.
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0012b] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:74 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000cc] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:58 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:114 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:50 
+  at NzbDrone.Common.Http.HttpClient.Get (NzbDrone.Common.Http.HttpRequest request) [0x00007] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:250 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00084] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:63 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:36 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x0006a] in C:\projects\radarr-usby1\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:36 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.TestCapabilities () [0x00006] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:103 
+
+18-12-27 00:39:38.9|Warn|NzbDroneErrorPipeline|Invalid request Validation failed: 
+ -- Unable to connect to indexer, check the log for more details
+ -- Unable to connect to indexer, check the log for more details
+18-12-27 00:40:38.1|Warn|Torznab|Unable to connect to indexer: The operation has timed out.
+
+[v0.2.0.1217] System.Net.WebException: The operation has timed out.
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0012b] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:74 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000cc] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:58 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:114 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:50 
+  at NzbDrone.Common.Http.HttpClient.Get (NzbDrone.Common.Http.HttpRequest request) [0x00007] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:250 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00084] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:63 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:36 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x0006a] in C:\projects\radarr-usby1\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:36 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.TestCapabilities () [0x00006] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:103 
+
+18-12-27 00:40:38.1|Warn|NzbDroneErrorPipeline|Invalid request Validation failed: 
+ -- Unable to connect to indexer, check the log for more details
+ -- Unable to connect to indexer, check the log for more details
+18-12-27 01:32:28.8|Info|PreDBService|Starting PreDB Sync
+18-12-27 01:32:29.1|Info|RssSyncService|Starting RSS Sync
+18-12-27 01:32:29.1|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 01:32:29.1|Info|DownloadDecisionMaker|No results found
+18-12-27 01:32:29.1|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 01:32:29.2|Info|NetImportSearchService|No lists are enabled for auto-import.
+18-12-27 02:32:34.0|Info|PreDBService|Starting PreDB Sync
+18-12-27 02:32:34.1|Info|NetImportSearchService|No lists are enabled for auto-import.
+18-12-27 02:32:34.4|Info|RssSyncService|Starting RSS Sync
+18-12-27 02:32:34.4|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 02:32:34.4|Info|DownloadDecisionMaker|No results found
+18-12-27 02:32:34.4|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 03:32:39.3|Info|PreDBService|Starting PreDB Sync
+18-12-27 03:32:39.5|Info|RssSyncService|Starting RSS Sync
+18-12-27 03:32:39.5|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 03:32:39.5|Info|DownloadDecisionMaker|No results found
+18-12-27 03:32:39.5|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 03:32:39.5|Info|NetImportSearchService|No lists are enabled for auto-import.
+18-12-27 04:32:44.7|Info|PreDBService|Starting PreDB Sync
+18-12-27 04:32:44.9|Info|RssSyncService|Starting RSS Sync
+18-12-27 04:32:44.9|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 04:32:44.9|Info|DownloadDecisionMaker|No results found
+18-12-27 04:32:44.9|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 04:32:45.0|Info|NetImportSearchService|No lists are enabled for auto-import.
+18-12-27 05:32:50.3|Info|RssSyncService|Starting RSS Sync
+18-12-27 05:32:50.3|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 05:32:50.3|Info|DownloadDecisionMaker|No results found
+18-12-27 05:32:50.3|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 05:32:50.5|Info|NetImportSearchService|No lists are enabled for auto-import.
+18-12-27 05:32:50.6|Info|PreDBService|Starting PreDB Sync
+18-12-27 06:32:55.4|Info|PreDBService|Starting PreDB Sync
+18-12-27 06:32:55.6|Info|RssSyncService|Starting RSS Sync
+18-12-27 06:32:55.6|Warn|FetchAndParseRssService|No available indexers. check your configuration.
+18-12-27 06:32:55.7|Info|DownloadDecisionMaker|No results found
+18-12-27 06:32:55.7|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+18-12-27 06:32:55.8|Info|NetImportSearchService|No lists are enabled for auto-import.
+18-12-27 07:13:14.9|Warn|Torznab|Unable to connect to indexer
+
+[v0.2.0.1217] System.Net.WebException: The operation has timed out.
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0012b] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:74 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000cc] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:58 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:114 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:50 
+  at NzbDrone.Common.Http.HttpClient.Get (NzbDrone.Common.Http.HttpRequest request) [0x00007] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:250 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00084] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:63 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:36 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x0006a] in C:\projects\radarr-usby1\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:36 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.get_PageSize () [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:24 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.GetRequestGenerator () [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:28 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].GetRequestChain (NzbDrone.Core.IndexerSearch.Definitions.SearchCriteriaBase searchCriteria) [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:64 
+  at NzbDrone.Core.Indexers.HttpIndexerBase`1[TSettings].TestConnection () [0x00019] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\HttpIndexerBase.cs:297 
+
+18-12-27 07:14:54.9|Warn|Torznab|Unable to connect to indexer: The operation has timed out.
+
+[v0.2.0.1217] System.Net.WebException: The operation has timed out.
+  at System.Net.HttpWebRequest.RunWithTimeoutWorker[T] (System.Threading.Tasks.Task`1[TResult] workerTask, System.Int32 timeout, System.Action abort, System.Func`1[TResult] aborted, System.Threading.CancellationTokenSource cts) [0x000f8] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at System.Net.HttpWebRequest.GetResponse () [0x00016] in <c0e40d34c25e4827874530676d4126b9>:0 
+  at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x0012b] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\Dispatchers\ManagedHttpDispatcher.cs:74 
+  at NzbDrone.Common.Http.Dispatchers.FallbackHttpDispatcher.GetResponse (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookies) [0x000cc] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\Dispatchers\FallbackHttpDispatcher.cs:58 
+  at NzbDrone.Common.Http.HttpClient.ExecuteRequest (NzbDrone.Common.Http.HttpRequest request, System.Net.CookieContainer cookieContainer) [0x0007e] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:114 
+  at NzbDrone.Common.Http.HttpClient.Execute (NzbDrone.Common.Http.HttpRequest request) [0x00008] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:50 
+  at NzbDrone.Common.Http.HttpClient.Get (NzbDrone.Common.Http.HttpRequest request) [0x00007] in C:\projects\radarr-usby1\src\NzbDrone.Common\Http\HttpClient.cs:250 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.FetchCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00084] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:63 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider+<>c__DisplayClass4_0.<GetCapabilities>b__0 () [0x00000] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:36 
+  at NzbDrone.Common.Cache.Cached`1[T].Get (System.String key, System.Func`1[TResult] function, System.Nullable`1[T] lifeTime) [0x0006a] in C:\projects\radarr-usby1\src\NzbDrone.Common\Cache\Cached.cs:81 
+  at NzbDrone.Core.Indexers.Newznab.NewznabCapabilitiesProvider.GetCapabilities (NzbDrone.Core.Indexers.Newznab.NewznabSettings indexerSettings) [0x00020] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Newznab\NewznabCapabilitiesProvider.cs:36 
+  at NzbDrone.Core.Indexers.Torznab.Torznab.TestCapabilities () [0x00006] in C:\projects\radarr-usby1\src\NzbDrone.Core\Indexers\Torznab\Torznab.cs:103 
+
+18-12-27 07:14:54.9|Warn|NzbDroneErrorPipeline|Invalid request Validation failed: 
+ -- Unable to connect to indexer, check the log for more details
+ -- Unable to connect to indexer, check the log for more details
+18-12-27 07:22:04.0|Info|Bootstrap|Starting Radarr - /opt/radarr/Radarr.exe - Version 0.2.0.1217
+18-12-27 07:22:04.7|Info|AppFolderInfo|Data directory is being overridden to [/config]
+18-12-27 07:22:04.8|Info|Router|Application mode: Interactive
+18-12-27 07:22:05.0|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+18-12-27 07:22:05.3|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+18-12-27 07:22:05.3|Info|OwinHostController|Listening on the following URLs:
+18-12-27 07:22:05.4|Info|OwinHostController|  http://*:7878/
+18-12-27 07:22:05.5|Info|NancyBootstrapper|Starting NzbDrone API
+18-12-27 07:22:06.5|Info|CommandExecutor|Starting 2 threads for tasks.
+18-12-27 07:26:50.5|Info|Bootstrap|Starting Radarr - /opt/radarr/Radarr.exe - Version 0.2.0.1217
+18-12-27 07:26:50.9|Info|AppFolderInfo|Data directory is being overridden to [/config]
+18-12-27 07:26:51.0|Info|Router|Application mode: Interactive
+18-12-27 07:26:51.2|Info|MigrationLogger|*** Migrating data source=/config/nzbdrone.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+18-12-27 07:26:51.4|Info|MigrationLogger|*** Migrating data source=/config/logs.db;cache size=-10485760;datetimekind=Utc;journal mode=Wal;pooling=True;version=3 ***
+18-12-27 07:26:51.4|Info|OwinHostController|Listening on the following URLs:
+18-12-27 07:26:51.4|Info|OwinHostController|  http://*:7878/
+18-12-27 07:26:51.6|Info|NancyBootstrapper|Starting NzbDrone API
+18-12-27 07:26:52.6|Info|CommandExecutor|Starting 2 threads for tasks.
