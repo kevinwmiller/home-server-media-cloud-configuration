@@ -4,3 +4,5 @@ services/nextcloud/db.env
 services/emby/libraries
 docker/
 services/emby/.vpn/
+services/emby/config/
+services/emby/transmission/
