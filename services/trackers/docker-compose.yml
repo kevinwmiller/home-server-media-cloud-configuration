@@ -9,10 +9,10 @@ services:
     restart: unless-stopped
     volumes:
       - /dev/net/tun:/dev/net/tun # tun device
-      - $PWD/.vpn:/vpn # OpenVPN configuration
+      - ./.vpn:/vpn # OpenVPN configuration
     ports:
       - 8112:8112 # port for deluge web UI to be reachable from local network
-    command: '-r 10.0.0.0/24' # route local network traffic
+    command: '-r 192.168.1.0/24' # route local network traffic
 
   deluge:
     container_name: deluge
@@ -23,8 +23,11 @@ services:
       - PUID=1000 # default user id, for downloaded files access rights
       - PGID=1000 # default group id, for downloaded files access rights
       - TZ=America/New_York # timezone
+#    ports:
+#      - 8112:8112
+#      - 58846:58846
     volumes:
-      - $PWD/downloads/ongoing:/downloads # download folder
+      - ./downloads/ongoing:/downloads # download folder
       - ${HOME}/.config/deluge:/config # config files
 
   jackett:
@@ -38,7 +41,7 @@ services:
       - TZ=America/New_York # timezone
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - $PWD/downloads/ongoing/torrent-blackhole:/downloads # place where to put .torrent files
+      - ./downloads/ongoing/torrent-blackhole:/downloads # place where to put .torrent files
       - ${HOME}/.config/jackett:/config # config files
 
   nzbget:
@@ -51,7 +54,7 @@ services:
       - PGID=1000 # default group id, for downloaded files access rights
       - TZ=America/New_York # timezone
     volumes:
-      - $PWD/downloads/ongoing:/downloads # download folder
+      - ./downloads/ongoing:/downloads # download folder
       - ${HOME}/.config/nzbget:/config # config files
 
   sonarr:
@@ -67,7 +70,7 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - ${HOME}/.config/sonarr:/config # config files
       - ${MEDIA_SERVER}/libraries/tv:/tv # tv shows folder
-      - $PWD/downloads/ongoing:/downloads # download folder
+      - ./downloads/ongoing:/downloads # download folder
 
   radarr:
     container_name: radarr
@@ -82,4 +85,4 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - ${HOME}/.config/radarr:/config # config files
       - ${MEDIA_SERVER}/libraries/movies:/movies # movies folder
-      - $PWD/downloads/ongoing:/downloads # download folder
+      - ./downloads/ongoing:/downloads # download folder
