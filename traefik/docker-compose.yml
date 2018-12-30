@@ -13,8 +13,13 @@ services:
       - 443:443
     labels:
       - traefik.enable=true
-      - traefik.frontend.rule=Host:dashboard.kevily.net
+      - traefik.frontend.rule=Host:${TRAEFIK_URL}
       - traefik.port=8080
+      - traefik.frontend.headers.referrerPolicy=no-referrer
+      - traefik.frontend.headers.customFrameOptionsValue=DENY
+      - "traefik.frontend.headers.contentSecurityPolicy=default-src 'none'; child-src 'self'; font-src 'self' data: ; connect-src 'self' wss: ws: https://mb3admin.com https://github.com/MediaBrowser/; media-src 'self' blob: data: https://github.com/MediaBrowser/; manifest-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'self'; object-src 'none'; worker-src 'self' blob: ; script-src 'self' https://www.gstatic.com; img-src data: https: http: ; style-src 'unsafe-inline' 'self' https://fonts.googleapis.com/css"
+      - traefik.frontend.headers.STSSeconds=315360000
+      - traefik.frontend.headers.contentTypeNosniff=true
     networks:
       - proxy
     container_name: traefik

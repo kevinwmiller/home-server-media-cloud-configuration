@@ -17,7 +17,7 @@ services:
       - $PWD/libraries/tv:/media/TV
     labels:
       - traefik.enable=true
-      - traefik.frontend.rule=Host:emby.kevily.net
+      - traefik.frontend.rule=Host:${EMBY_URL}
       - traefik.port=8096
       - traefik.protocol=http
       - traefik.frontend.headers.referrerPolicy=no-referrer

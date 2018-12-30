@@ -90,7 +90,7 @@ services:
       - trackers_default
     labels:
       - traefik.enable=true
-      - traefik.frontend.rule=Host:ombi.kevily.net
+      - traefik.frontend.rule=Host:${OMBI_URL}
       - traefik.port=3579
       - traefik.protocol=http
       - traefik.frontend.headers.referrerPolicy=no-referrer

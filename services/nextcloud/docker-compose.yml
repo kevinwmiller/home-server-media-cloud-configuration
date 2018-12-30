@@ -29,7 +29,7 @@ services:
       - nextcloud
     labels:
       - traefik.enable=true
-      - traefik.frontend.rule=Host:cloud.kevily.net
+      - traefik.frontend.rule=Host:${NEXTCLOUD_URL}
       - traefik.port=80
       - traefik.protocol=http
       - traefik.docker.network=proxy
