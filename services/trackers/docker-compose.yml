@@ -45,19 +45,6 @@ services:
       - ./downloads/ongoing/torrent-blackhole:/downloads # place where to put .torrent files
       - ${HOME}/.config/jackett:/config # config files
 
-  nzbget:
-    container_name: nzbget
-    image: linuxserver/nzbget:latest
-    restart: unless-stopped
-    network_mode: host
-    environment:
-      - PUID=1000 # default user id, for downloaded files access rights
-      - PGID=1000 # default group id, for downloaded files access rights
-      - TZ=America/New_York # timezone
-    volumes:
-      - ./downloads/ongoing:/downloads # download folder
-      - ${HOME}/.config/nzbget:/config # config files
-
   sonarr:
     container_name: sonarr
     image: linuxserver/sonarr:latest
@@ -89,3 +76,32 @@ services:
       - ${HOME}/.config/radarr:/config # config files
       - ${MEDIA_SERVER}/libraries/movies:/movies # movies folder
       - ./downloads/ongoing:/downloads # download folder
+
+  ombi:
+    container_name: ombi
+    image: rogueosb/ombi
+    restart: unless-stopped
+    environment:
+      - TZ=America/New_York
+      - PUID=1000
+      - PGID=1000
+    networks:
+      - proxy
+      - trackers_default
+    labels:
+      - traefik.enable=true
+      - traefik.frontend.rule=Host:ombi.kevily.net
+      - traefik.port=3579
+      - traefik.protocol=http
+      - traefik.frontend.headers.referrerPolicy=no-referrer
+      - traefik.frontend.headers.customFrameOptionsValue=DENY
+      - "traefik.frontend.headers.contentSecurityPolicy=default-src 'none'; child-src 'self'; font-src 'self' data: ; connect-src 'self' wss: ws: https://mb3admin.com https://github.com/MediaBrowser/; media-src 'self' blob: data: https://github.com/MediaBrowser/; manifest-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'self'; object-src 'none'; worker-src 'self' blob: ; script-src 'unsafe-inline' 'self' https://www.gstatic.com; img-src data: https: http: ; style-src 'unsafe-inline' 'self' https://fonts.googleapis.com/css"
+      - traefik.frontend.headers.STSSeconds=315360000
+      - traefik.frontend.headers.contentTypeNosniff=true
+    volumes:
+      - ${HOME}/.config/ombi:/config
+networks:
+  proxy:
+    external: true
+  trackers_default:
+    external: true
