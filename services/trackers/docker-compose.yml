@@ -80,7 +80,7 @@ services:
   ombi:
     container_name: ombi
     image: rogueosb/ombi
-    restart: unless-stopped
+    restart: always
     environment:
       - TZ=America/New_York
       - PUID=1000

@@ -1,24 +1,19 @@
-version: '3.2'
-
+version: '3.4'
 services:
-
-  emby:
-    container_name: emby
-    image: emby/embyserver
+  organizr:
+    container_name: organizr
+    image: lsiocommunity/organizr
     restart: always
-    environment:
-      - PGID=1000
-      - PUID=1000
     volumes:
-      - emby-data:/var/lib/emby
-      - $PWD/libraries/movies:/media/Movies
-      - $PWD/libraries/music:/media/Music
-      - $PWD/libraries/photos:/media/Photos
-      - $PWD/libraries/tv:/media/TV
+      - ~/.config/organizr:/config
+    environment:
+      - PUID=1000 # default user id, for downloaded files access rights
+      - PGID=1000 # default group id, for downloaded files access rights
+      - TZ=America/New_York # timezone
     labels:
       - traefik.enable=true
-      - traefik.frontend.rule=Host:emby.kevily.net
-      - traefik.port=8096
+      - traefik.frontend.rule=Host:kevily.net
+      - traefik.port=80
       - traefik.protocol=http
       - traefik.frontend.headers.referrerPolicy=no-referrer
       - traefik.frontend.headers.customFrameOptionsValue=DENY
@@ -27,9 +22,6 @@ services:
       - traefik.frontend.headers.contentTypeNosniff=true
     networks:
       - proxy
-
 networks:
   proxy:
     external: true
-volumes:
-  emby-data:
