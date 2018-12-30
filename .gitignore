@@ -5,3 +5,4 @@ services/emby/libraries
 docker/
 services/trackers/downloads/
 services/trackers/.vpn/
+urls.env
