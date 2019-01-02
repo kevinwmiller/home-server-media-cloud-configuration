@@ -33,7 +33,7 @@ This repository contains a set of docker configuration files for easily setting 
   - ombi -> ombi.{{domain}}.duckdns.org
     - Replace {{domain}} with the domain you specified in the Setting Up DuckDns section
     - Any Host values (dashboard, emby, cloud, ombi) can be changed if desired. Doing so will change that sub-domain that the associated service is accessed from
-      - **If you change the sub-domains here, ensure the subdomains confiuged below are the same**
+      - **If you change the sub-domains here, ensure the subdomains configured below are the same**
  
  ## Services
 1) Clone the repository to the location that you want to store your emby library and nextcloud data
